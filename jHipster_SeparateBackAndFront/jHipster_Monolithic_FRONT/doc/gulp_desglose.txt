@@ -1,0 +1,39 @@
+DESGLOSE GULP:
+
+1. GULP DEFAULT: SERVE
+
+	La tarea gulp por defecto (gulp.task('default') es 'serve'.
+
+	Ésta a su vez se divide en 2:
+
+	1.1. INSTALL:
+		Install hace un runSequence de lo siguiente (las tareas entre paréntesis se ejecutan en paralelo)
+			['inject:dep', 'ngconstant:dev'],
+			'sass',
+			'copy:languages',
+			'inject:app',
+			'inject:troubleshoot'
+		
+		1.1.1 INJECT:DEP
+			1.1.1.1 INJECT:TEST
+				INJECT:TEST llama a la función test() que hay en el archivo inject.js en el directorio gulp
+			1.1.1.2 INJECT:VENDOR
+				INJECT:VENDOR llama a la función vendor() que hay en el archivo inject.js en el directorio gulp
+		1.1.2 NGCONSTANT:DEV
+
+		1.1.3 SASS
+
+		1.1.4 COPY:LANGUAGES
+
+		1.1.5 INJECT:APP
+
+		1.1.6 INJECT:TROUBLESHOOT
+			
+	1.2. SERVE:
+		Serve llama directamente al js serve, el cual define una serie de variables, exporta otras, define browsersync y finalmente ejecuta la tarea 'watch' 
+		1.2.1 WATCH
+			Cada línea de 'watch' tiene dos argumentos de entrada, el primero es el archivo/s del que detecta los cambios, y el segundo es la tarea/s a ejecutar 
+
+2. GULP TEST
+3. GULP BUILD
+4. GULP CLEAN

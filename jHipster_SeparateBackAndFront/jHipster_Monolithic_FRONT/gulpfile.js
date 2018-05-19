@@ -150,7 +150,7 @@ gulp.task('eslint', function () {
         .pipe(eslint.failOnError());
 });
 
-// check app for eslint errors anf fix some of them
+// check app for eslint errors and fix some of them
 gulp.task('eslint:fix', function () {
     return gulp.src(config.app + 'app/**/*.js')
         .pipe(plumber({errorHandler: handleErrors}))
