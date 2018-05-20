@@ -67,5 +67,8 @@
   },
   "scripts": {
     "test": "gulp test"
+  },
+  "dependencies": {
+    "require-dir": "^1.0.0"
   }
 }
