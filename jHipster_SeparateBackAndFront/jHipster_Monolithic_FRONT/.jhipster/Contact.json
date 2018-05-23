@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "firstname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telephone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180523110019",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "contact",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pager"
+}

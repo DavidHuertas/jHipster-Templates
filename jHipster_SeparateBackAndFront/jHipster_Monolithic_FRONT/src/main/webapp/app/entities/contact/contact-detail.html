@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span data-translate="jHipsterMonolithicApp.contact.detail.title">Contact</span> {{vm.contact.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jHipsterMonolithicApp.contact.firstname">Firstname</span></dt>
+        <dd>
+            <span>{{vm.contact.firstname}}</span>
+        </dd>
+        <dt><span data-translate="jHipsterMonolithicApp.contact.lastname">Lastname</span></dt>
+        <dd>
+            <span>{{vm.contact.lastname}}</span>
+        </dd>
+        <dt><span data-translate="jHipsterMonolithicApp.contact.telephone">Telephone</span></dt>
+        <dd>
+            <span>{{vm.contact.telephone}}</span>
+        </dd>
+        <dt><span data-translate="jHipsterMonolithicApp.contact.city">City</span></dt>
+        <dd>
+            <span>{{vm.contact.city}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="contact-detail.edit({id:vm.contact.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
