@@ -2,14 +2,14 @@
 
 /*
 
- En vez de administrar un enorme fichero que configure las tareas,
- cada tarea se ha separado en un fichero dentro de la ruta 'gulp/tasks'.
- Cada uno de los ficheros de tarea definidos en esta carpeta se cargarán de forma automática.
- Esta separación modular de tareas nos permite compartir reutilizar los ficheros en diferentes royectos.
+ Instead of administrating a giant file for configurating tasks,
+ each task has been separated in a file contained in directory '/gulp/tasks'.
+ Each file inside this path will be loaded automatically.
+ This modular separation of tasks will allow share and reuse the files in different projects.
+ 
+ To add a new task, just add a new task file in directory '/gulp/tasks'.
 
- Para añadir una nueva tarea, simplemente añade un nuevo fichero de tarea en el directorio 'gulp/tasks'.
-
- gulp/tasks/default.js especifica las tarea a ejecutar por defecto cuando lanzamos 'gulp'.
+ 'gulp/tasks/default.js' specifies the default tasks when the command 'gulp is run in terminal/command line window.
 
  */
 

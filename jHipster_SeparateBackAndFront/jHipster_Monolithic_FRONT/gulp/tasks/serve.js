@@ -4,7 +4,8 @@
 var gulp = require('gulp');
 
 //Utils
-var serveUtils = require('../utils/serveUtils');
+var serveDevUtils = require('../utils/serveDevUtils'),
+	serveProdUtils = require('../utils/serveProdUtils');
 
 //Config
 var config = require('../config');
@@ -12,4 +13,6 @@ var config = require('../config');
 //______________
 //Tasks
 
-gulp.task('serve', ['install'], serveUtils)
+gulp.task('serve:dev', ['install'], serveDevUtils);
+
+gulp.task('serve:prod', ['install'], serveProdUtils)

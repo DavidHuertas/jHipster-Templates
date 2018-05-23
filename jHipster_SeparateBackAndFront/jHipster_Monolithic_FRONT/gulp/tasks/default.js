@@ -12,4 +12,4 @@ var config = require('../config');
 //______________
 //Tasks
 
-gulp.task('default', ['serve'])
+gulp.task('default', ['serve:prod'])

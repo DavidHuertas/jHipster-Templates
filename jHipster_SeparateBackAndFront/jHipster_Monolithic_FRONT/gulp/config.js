@@ -5,6 +5,7 @@ module.exports = {
     dist: 'target/www/',
     swaggerDist: 'target/www/swagger-ui/',
     test: 'src/test/javascript/',
+    jade: 'src/main/webapp/app/**/*.jade',
     scss: 'src/main/webapp/scss/',
     sassSrc: 'src/main/webapp/scss/**/*.{scss,sass}',
     sassVendor: 'src/main/webapp/scss/vendor.scss',
