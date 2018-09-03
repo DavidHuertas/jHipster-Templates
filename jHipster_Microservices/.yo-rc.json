@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.dorchsoft",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "5.0.1",
+    "applicationType": "microservice",
+    "baseName": "jHipsterMicroservices",
+    "packageName": "com.dorchsoft",
+    "packageFolder": "com/dorchsoft",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "consul",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ce1a75dfbfbf638fd0772d8498bcdde3dee97239",
+    "enableTranslation": true,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "nativeLanguage": "es",
+    "languages": [
+      "es",
+      "en"
+    ],
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
