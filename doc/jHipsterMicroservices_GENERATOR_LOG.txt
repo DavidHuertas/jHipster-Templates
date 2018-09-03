@@ -1,0 +1,164 @@
+C:\Projects\Templates\jhipster-templates\jHipster_Microservices>jHipster
+Using JHipster version installed globally
+Running default command
+Executing jhipster:app
+Options:
+
+
+        ██╗ ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
+        ██║ ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
+        ██║ ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝
+  ██╗   ██║ ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║
+  ╚██████╔╝ ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗
+   ╚═════╝  ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝
+
+                            https://www.jhipster.tech
+
+Welcome to JHipster v5.0.1
+Application files will be generated in folder: C:\Projects\Templates\jhipster-templates\jHipster_Microservices
+ _______________________________________________________________________________________________________________
+
+  Documentation for creating an application is at https://www.jhipster.tech/creating-an-app/
+  If you find JHipster useful, consider sponsoring the project at https://opencollective.com/generator-jhipster
+ _______________________________________________________________________________________________________________
+
+WARNING! yarn is not found on your computer.
+
+? Which *type* of application would you like to create? Microservice application
+? What is the base name of your application? jHipsterMicroservices
+? As you are running in a microservice architecture, on which port would like your server to run? It should be unique to avoid port conflicts. 8081
+? What is your default Java package name? com.dorchsoft
+? Which service discovery server do you want to use? Consul
+? Which *type* of authentication would you like to use? JWT authentication (stateless, with a token)
+? Which *type* of database would you like to use? SQL (H2, MySQL, MariaDB, PostgreSQL, Oracle, MSSQL)
+? Which *production* database would you like to use? MySQL
+? Which *development* database would you like to use? MySQL
+? Do you want to use the Spring cache abstraction? Yes, with the Ehcache implementation (local cache, for a single node)
+? Do you want to use Hibernate 2nd level cache? Yes
+? Would you like to use Maven or Gradle for building the backend? Maven
+? Which other technologies would you like to use? Search engine using Elasticsearch
+? Would you like to enable internationalization support? Yes
+? Please choose the native language of the application Spanish
+? Please choose additional languages to install English
+? Besides JUnit and Jest, which testing frameworks would you like to use?
+? Would you like to install other generators from the JHipster Marketplace? No
+
+Installing languages: es, en for server
+   create package.json
+   create src\main\resources\i18n\messages.properties
+   create README.md
+   create .gitignore
+   create .gitattributes
+   create .editorconfig
+   create src\main\docker\Dockerfile
+   create src\main\docker\entrypoint.sh
+   create src\main\docker\.dockerignore
+   create src\main\docker\app.yml
+   create src\main\docker\sonar.yml
+   create src\main\docker\mysql.yml
+   create src\main\docker\elasticsearch.yml
+   create src\main\docker\central-server-config\README.md
+   create src\main\docker\consul.yml
+   create src\main\docker\config\git2consul.json
+   create src\main\docker\central-server-config\application.yml
+   create mvnw
+   create mvnw.cmd
+   create .mvn\wrapper\maven-wrapper.jar
+   create .mvn\wrapper\maven-wrapper.properties
+   create pom.xml
+   create src\main\resources\banner.txt
+   create src\main\resources\templates\error.html
+   create src\main\resources\logback-spring.xml
+   create src\main\resources\config\application.yml
+   create src\main\resources\config\application-dev.yml
+   create src\main\resources\config\application-prod.yml
+   create src\main\resources\config\liquibase\changelog\00000000000000_initial_schema.xml
+   create src\main\resources\config\liquibase\master.xml
+   create src\main\java\com\dorchsoft\security\SpringSecurityAuditorAware.java
+   create src\main\java\com\dorchsoft\security\SecurityUtils.java
+   create src\main\java\com\dorchsoft\security\AuthoritiesConstants.java
+   create src\main\java\com\dorchsoft\security\package-info.java
+   create src\main\java\com\dorchsoft\security\jwt\TokenProvider.java
+   create src\main\java\com\dorchsoft\security\jwt\JWTConfigurer.java
+   create src\main\java\com\dorchsoft\security\jwt\JWTFilter.java
+   create src\main\java\com\dorchsoft\config\SecurityConfiguration.java
+   create src\main\java\com\dorchsoft\config\FeignConfiguration.java
+   create src\main\java\com\dorchsoft\client\UserFeignClientInterceptor.java
+   create src\main\resources\static\index.html
+   create src\main\resources\config\bootstrap.yml
+   create src\main\resources\config\bootstrap-prod.yml
+   create src\main\java\com\dorchsoft\JHipsterMicroservicesApp.java
+   create src\main\java\com\dorchsoft\ApplicationWebXml.java
+   create src\main\java\com\dorchsoft\aop\logging\LoggingAspect.java
+   create src\main\java\com\dorchsoft\config\DefaultProfileUtil.java
+   create src\main\java\com\dorchsoft\config\package-info.java
+   create src\main\java\com\dorchsoft\config\AsyncConfiguration.java
+   create src\main\java\com\dorchsoft\config\Constants.java
+   create src\main\java\com\dorchsoft\config\DateTimeFormatConfiguration.java
+   create src\main\java\com\dorchsoft\config\LoggingConfiguration.java
+   create src\main\java\com\dorchsoft\config\ApplicationProperties.java
+   create src\main\java\com\dorchsoft\config\JacksonConfiguration.java
+   create src\main\java\com\dorchsoft\config\LocaleConfiguration.java
+   create src\main\java\com\dorchsoft\config\LoggingAspectConfiguration.java
+   create src\main\java\com\dorchsoft\config\MetricsConfiguration.java
+   create src\main\java\com\dorchsoft\config\WebConfigurer.java
+   create src\main\java\com\dorchsoft\config\CacheConfiguration.java
+   create src\main\java\com\dorchsoft\config\CloudDatabaseConfiguration.java
+   create src\main\java\com\dorchsoft\config\DatabaseConfiguration.java
+   create src\main\java\com\dorchsoft\config\audit\package-info.java
+   create src\main\java\com\dorchsoft\config\audit\AuditEventConverter.java
+   create src\main\java\com\dorchsoft\config\ElasticsearchConfiguration.java
+   create src\main\java\com\dorchsoft\domain\package-info.java
+   create src\main\java\com\dorchsoft\domain\AbstractAuditingEntity.java
+   create src\main\java\com\dorchsoft\domain\PersistentAuditEvent.java
+   create src\main\java\com\dorchsoft\repository\search\package-info.java
+   create src\main\java\com\dorchsoft\repository\package-info.java
+   create src\main\java\com\dorchsoft\service\package-info.java
+   create src\main\java\com\dorchsoft\web\rest\errors\package-info.java
+   create src\main\java\com\dorchsoft\web\rest\errors\InternalServerErrorException.java
+   create src\main\java\com\dorchsoft\web\rest\errors\BadRequestAlertException.java
+   create src\main\java\com\dorchsoft\web\rest\errors\CustomParameterizedException.java
+   create src\main\java\com\dorchsoft\web\rest\errors\EmailAlreadyUsedException.java
+   create src\main\java\com\dorchsoft\web\rest\errors\EmailNotFoundException.java
+   create src\main\java\com\dorchsoft\web\rest\errors\ErrorConstants.java
+   create src\main\java\com\dorchsoft\web\rest\errors\ExceptionTranslator.java
+   create src\main\java\com\dorchsoft\web\rest\errors\FieldErrorVM.java
+   create src\main\java\com\dorchsoft\web\rest\errors\InvalidPasswordException.java
+   create src\main\java\com\dorchsoft\web\rest\errors\LoginAlreadyUsedException.java
+   create src\main\java\com\dorchsoft\web\rest\vm\package-info.java
+   create src\main\java\com\dorchsoft\web\rest\vm\LoggerVM.java
+   create src\main\java\com\dorchsoft\web\rest\util\HeaderUtil.java
+   create src\main\java\com\dorchsoft\web\rest\util\PaginationUtil.java
+   create src\main\java\com\dorchsoft\web\rest\package-info.java
+   create src\main\java\com\dorchsoft\web\rest\LogsResource.java
+   create src\test\java\com\dorchsoft\config\WebConfigurerTest.java
+   create src\test\java\com\dorchsoft\config\WebConfigurerTestController.java
+   create src\test\java\com\dorchsoft\web\rest\TestUtil.java
+   create src\test\java\com\dorchsoft\web\rest\LogsResourceIntTest.java
+   create src\test\java\com\dorchsoft\web\rest\errors\ExceptionTranslatorIntTest.java
+   create src\test\java\com\dorchsoft\web\rest\errors\ExceptionTranslatorTestController.java
+   create src\test\java\com\dorchsoft\web\rest\util\PaginationUtilUnitTest.java
+   create src\test\resources\config\application.yml
+   create src\test\resources\logback.xml
+   create src\test\resources\config\bootstrap.yml
+   create src\main\resources\i18n\messages_es.properties
+   create src\main\resources\i18n\messages_en.properties
+
+Installing generator-jhipster@5.0.1 locally using npm
+
+> spawn-sync@1.0.15 postinstall C:\Projects\Templates\jhipster-templates\jHipster_Microservices\node_modules\spawn-sync
+> node postinstall
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+added 460 packages from 297 contributors in 83.663s
+[+] no known vulnerabilities found [2743 packages audited]
+
+If you find JHipster useful consider supporting our collective https://opencollective.com/generator-jhipster
+
+Server application generated successfully.
+
+Run your Spring Boot application:
+ ./mvnw (mvnw if using Windows Command Prompt)
+Congratulations, JHipster execution is complete!
+
+C:\Projects\Templates\jhipster-templates\jHipster_Microservices>
